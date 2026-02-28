@@ -1,7 +1,7 @@
 import { tweetsData } from './data.js'
 const tweetInput = document.getElementById('tweet-input')
 const tweetBtn = document.getElementById('tweet-btn')
-const feeD = document.getElementById('feed')
+
 
 tweetBtn.addEventListener('click', function(){
     console.log(tweetInput.value)
@@ -43,7 +43,7 @@ function getFeedHtml() {
 
 
 function render() {
-    feeD.innerHTML = getFeedHtml()
+   document.getElementById('feed').innerHTML = getFeedHtml()
 }
 
 render()
