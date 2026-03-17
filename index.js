@@ -55,7 +55,7 @@ function handleReplyClick(replyId){
 }
 
 function handleTweetBtnClick(){
-    console.log({
+    tweetsData.unshift({
         handle: `@Scrimba`,
         profilePic: `images/scrimbalogo.png`,
         likes: 0,
@@ -66,6 +66,8 @@ function handleTweetBtnClick(){
         isRetweeted: false,
         uuid: uuidv4(),
     },)
+    render()
+     
 
 }
 
